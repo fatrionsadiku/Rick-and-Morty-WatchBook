@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rick and Morty</string>
+    <string name="search">Search</string>
+    <string name="advanced_filters">Advanced Filters</string>
+    <string name="filters">Filters</string>
+    <string name="apply">Apply</string>
+</resources>
