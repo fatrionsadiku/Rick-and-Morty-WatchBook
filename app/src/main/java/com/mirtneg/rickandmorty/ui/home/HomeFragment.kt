@@ -75,9 +75,9 @@ class HomeFragment : Fragment() {
         dialog = Dialog(requireActivity())
         dialog.setContentView(dialogBinding.root)
 
-        val layoutParams = dialog.window!!.attributes
-        layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT
-        dialog.window!!.attributes = layoutParams
+        dialog.window?.attributes?.apply {
+            width = WindowManager.LayoutParams.MATCH_PARENT
+        }
 
         dialogBinding.closeButton.setOnClickListener {
             dialog.dismiss()
